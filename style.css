@@ -1,0 +1,74 @@
+#topbar {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	background: #d14242;
+	width: 100%;
+	z-index: 1000;
+}
+
+#wrapper {
+	position: relative;
+	box-sizing: border-box;
+	top: 50px;
+	width: 100%;
+	height: 1000px;
+	padding-left: 20px;
+}
+
+#articlebody {
+	box-sizing: border-box;
+	background: #56b191;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 30px;
+}
+
+#pageheader {
+	position: relative;
+	top:0;
+	background: #43cfde;
+	width: 100%;
+	height: 80px;
+}
+#topad {
+	position: relative;
+	height: 128px;
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: black 1px solid;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#bannerad {
+	position: relative;
+	margin-top: 19px;
+	width: 728px;
+	height: 90px;
+	border: 1px black solid;
+}
+
+#mainarticle {
+	margin: 0 auto;
+	position: relative;
+	width: 90%;
+	height: 1000px;
+	background: #6908f1;
+}
+
+#articleheader{
+	height: 165px;
+	width: 100%;
+	background: #1d0442;
+}
+
+#topimg {
+	width: 100%;
+}
+
+#cosmos {
+	width: 100%;
+}
