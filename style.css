@@ -499,3 +499,10 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+#videocaption {
+	margin-bottom: 5px;
+	color: #888;
+	font-size: 12px;
+	line-height: 14px;
+}
