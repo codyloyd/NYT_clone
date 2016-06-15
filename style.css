@@ -432,4 +432,70 @@
 	width: 55%;
 	color: #333;
 	padding-left: 60px;
+	margin-bottom: 25px;
+}
+
+#theorywrapper {
+	width: 90%;
+	clear: both; 
+	display: flex;
+	flex-direction: column;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+}
+
+#headline {
+	width: 100%;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#leadintext {
+	width: 100%;
+	font-size: 13px;
+	color: #888;
+	margin-bottom: 10px;
+}
+#graphicscontainer {
+	background-image: url(inflation.png);
+	background-size: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gridbox{
+	box-sizing: border-box;
+	width: 25%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+.gridtext em {
+	font-weight: 600;
+	font-size: 10px;
+}
+
+.spacer {
+	height: 50%;
+}
+
+.gridtext{
+	height: 50%;
+	font-family: sans;
+	font-size: 12px;
+	line-height: 18px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#attribution {
+	font-family: sans;
+	font-size: 10px;
+	color: #aaa;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
