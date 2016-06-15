@@ -19,7 +19,8 @@
 }
 
 #topbarleft {
-	width: 200px;
+	position: absolute;
+	width: 400px;
 	height: 50px;
 	float: left;
 	text-align: left;
@@ -29,7 +30,7 @@
 #sections {
 	box-sizing: border-box;
 	height: 30px;
-	padding: 0 12px;
+	padding: 0 12px 0 8px;
 	position: relative;
 	top: 10px;
 	background: white;
@@ -39,9 +40,13 @@
 	box-shadow: -3px 4px 4px rgba(0,0,0,0.06);
 }
 
+
+
+
 #sections:hover {
 	background: #eee;
 }
+
 #sections p {
 	font-weight: 700;
 	position: relative;
@@ -60,14 +65,135 @@
 	display: inline-block;
 }
 
+#home {
+	box-sizing: border-box;
+	height: 30px;
+	padding: 0 12px 0 8px;
+	position: relative;
+	top: 10px;
+	background: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 10px;
+	display: inline-block;
+}
+#home:hover {
+	background: #eee;
+}
+#home p {
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	bottom: 4px;
+	margin-left: 4px;
+}
+
+
+#homebutton {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -83px -280px;
+	width: 16px;
+	height: 16px;
+	margin-top: -1px;
+	display: inline-block;
+}
+
+#search {
+	box-sizing: border-box;
+	height: 30px;
+	padding: 0 12px 0 8px;
+	position: relative;
+	top: 10px;
+	background: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 10px;
+	display: inline-block;
+}
+#search:hover {
+	background: #eee;
+}
+
+#search p {
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	bottom: 4px;
+	margin-left: 4px;
+}
+
+
+#searchbutton {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -404px -214px;
+	width: 16px;
+	height: 16px;
+	margin-top: -1px;
+	display: inline-block;
+}
+
 #logo {
 	position: relative;
 	margin: 0 auto;
 	height: 40px;
+	margin-left: -50px;
 }
 #logoimg {
 	position: relative;
 	top: 13px;
+}
+
+#topbarright{
+	height: 50px;
+	width: 400px;
+	position: absolute;
+	right: 25;
+	top: 10px;
+}
+
+#topbarright > * {
+	margin-right: 10px;
+}
+#articlesread {
+	font-family: sans-serif;
+	font-size: 10px;
+	color: #333;
+	display: inline-block;
+}
+
+#subscribebutton {
+	background: #6288a5;
+	border: 1px solid #4d7b9f;
+	color: white;
+	padding: 6px 10px 6px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 600;
+
+}
+#loginbutton {
+	background: #6288a5;
+	border: 1px solid #4d7b9f;
+	color: white;
+	padding: 6px 10px 6px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 600;
+}
+#settingsbutton{
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -34px -247px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+
 }
 
 #wrapper {
