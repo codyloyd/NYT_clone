@@ -1,10 +1,73 @@
-#topbar {
+#headercontainer {
 	position: fixed;
 	top: 0;
 	height: 50px;
-	background: #d14242;
 	width: 100%;
-	z-index: 1000;
+	padding-left: 30px;
+	z-index: 10000;
+	background: white;
+}
+
+#topbar {
+	margin:0;
+	position: relative;
+	top: 0;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	box-shadow: -3px 0 4px rgba(0,0,0,0.06);
+}
+
+#topbarleft {
+	width: 200px;
+	height: 50px;
+	float: left;
+	text-align: left;
+	margin-left: -15px
+}
+
+#sections {
+	box-sizing: border-box;
+	height: 30px;
+	padding: 0 12px;
+	position: relative;
+	top: 10px;
+	background: white;
+	border: #ddd 1px solid;
+	border-radius: 3px;
+	font-size: 10px;
+	box-shadow: -3px 4px 4px rgba(0,0,0,0.06);
+}
+
+#sections:hover {
+	background: #eee;
+}
+#sections p {
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	bottom: 4px;
+	margin-left: 4px;
+}
+
+#sectionsbutton {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -490px -214px;
+	width: 16px;
+	height: 16px;
+	margin-top: -1px;
+	display: inline-block;
+}
+
+#logo {
+	position: relative;
+	margin: 0 auto;
+	height: 40px;
+}
+#logoimg {
+	position: relative;
+	top: 13px;
 }
 
 #wrapper {
@@ -12,26 +75,28 @@
 	box-sizing: border-box;
 	top: 50px;
 	width: 100%;
-	height: 1000px;
 	padding-left: 20px;
 }
 
 #articlebody {
-	box-sizing: border-box;
-	background: #56b191;
+	/*box-sizing: border-box;*/
 	position: absolute;
+	height: 8000px;
 	top:0;
 	bottom: 0;
 	right: 0;
 	left: 30px;
+	box-shadow: -3px -3px 10px rgba(0,0,0,0.06);
+	/*border-left: solid black 10px;*/
 }
 
 #pageheader {
 	position: relative;
 	top:0;
-	background: #43cfde;
 	width: 100%;
 	height: 80px;
+    box-shadow: 3px 3px 3px #eee;
+    border-bottom: 1px solid #ccc;
 }
 #topad {
 	position: relative;
@@ -43,9 +108,16 @@
 	text-align: center;
 }
 
+#adlabel {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: lightgray;
+	line-height: 19px;
+}
+
 #bannerad {
 	position: relative;
-	margin-top: 19px;
+	margin-top: 0;
 	width: 728px;
 	height: 90px;
 	border: 1px black solid;
@@ -55,20 +127,154 @@
 	margin: 0 auto;
 	position: relative;
 	width: 90%;
-	height: 1000px;
-	background: #6908f1;
 }
 
 #articleheader{
 	height: 165px;
 	width: 100%;
-	background: #1d0442;
+}
+
+#topicbar{
+	height: 18px;
+	padding-top: 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+}
+
+#articletitle {
+	padding-top: 28px;
+	height: 48px;
+	font-size: 28px;
+	font-style: italic;
+	border-bottom: 1px solid #ccc;
+}
+
+#authorandicons {
+	position: relative;
+	height: 36px;
+}
+
+#author {
+	position: absolute;
+	bottom: 0;
+	font-size: 11px;
+}
+
+#author em {
+	font-weight: 600;
+}
+
+#icons {
+	height: 25px;
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	width: 260px;
+}
+
+#facebookicon {
+	background: url(sprites.svg);
+    background-repeat: no-repeat;
+    background-position: -33px -54px;
+    width: 25px;
+    height: 25px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#twittericon {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -33px -313px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#emailicon {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -131px -21px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#shareicon {
+	background: url(sprites.svg);
+    background-repeat: no-repeat;
+    background-position: -294px -247px;
+    width: 25px;
+    height: 25px;
+	display: inline-block;
+	
+	margin-left: 10px;
+}
+
+#divider {
+	width: 10px;
+	
+	margin-left: 10px;
+	border-left: 1px solid #ccc;
+	height: 25px;
+	display: inline-block;
+}
+
+#bookmarkicon {
+	background: url(sprites.svg);
+	background-repeat: no-repeat;
+	background-position: -353px -214px;
+	width: 16px;
+	height: 25px;
+	display: inline-block;
+}
+
+#textbubble {
+	border: 1px solid #333;
+	border-radius: 5px;
+	width: 36px;
+	height: 25px;
+	background: white;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 12px;
+	margin-left: 10px;
+	position: relative;
+	top: -8px;
 }
 
 #topimg {
 	width: 100%;
 }
 
+#cosmoscaption {
+	padding-right: 490px;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #888;
+	line-height: 18px;
+}
+
+#cosmoscaption em {
+	color: #bbb;
+	font-weight: 500;
+}
+
 #cosmos {
 	width: 100%;
+}
+
+.article {
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 30px;
+	float: left;
+	width: 55%;
+	color: #333;
+	padding-left: 60px;
 }
