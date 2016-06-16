@@ -1,3 +1,7 @@
+.article p {
+	margin-bottom: 18px;
+}
+
 #headercontainer {
 	position: fixed;
 	top: 0;
@@ -500,9 +504,14 @@
 	padding-bottom: 10px;
 }
 
-#videocaption {
+.videocaption {
 	margin-bottom: 5px;
 	color: #888;
 	font-size: 12px;
 	line-height: 14px;
+	width: 600px;
+}
+
+img[alt="telescope"] {
+	width: 600px;
 }
